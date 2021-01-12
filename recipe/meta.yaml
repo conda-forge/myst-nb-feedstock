@@ -1,5 +1,5 @@
 {% set name = "myst-nb" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c803da2cf42bc88182ca129b3e7f3b122899fd263a70dc79be06303bc450d12b
+  sha256: 5ac241f67cc5566c353694da2504fc53ba4c4a2b65efee15fb4c590451dad757
 
 build:
   number: 0
