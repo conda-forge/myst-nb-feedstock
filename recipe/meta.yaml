@@ -1,5 +1,5 @@
 {% set name = "myst-nb" %}
-{% set version = "0.11.1" %}
+{% set version = "0.12.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1ac530645296310c61ccb7e767309c6498fa386ccc41499f5ec1f6b57a4dd1c9
+  sha256: 4666039f538abf32d6489f4caf912d505e8798a2709bcf7a7936823ca6b15810
 
 build:
   number: 1
@@ -19,18 +19,18 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - docutils >=0.15
+    - docutils >=0.15,<0.18
     - importlib_metadata
     - ipython
     - ipywidgets >=7.0.0,<8
     - jupyter-cache >=0.4.1,<0.5
-    - jupyter-sphinx ==0.3.1
-    - myst-parser >=0.13.3,<0.14.0
-    - nbconvert >=5.5,<6
+    - jupyter-sphinx >=0.3.2,<0.4
+    - myst-parser >=0.15.2,<0.16
+    - nbconvert >=5.5,<7
     - nbformat >=5.0,<6
     - python >=3.6
     - pyyaml
-    - sphinx >=2,<4
+    - sphinx >=3.1,<5
     - sphinx-togglebutton >=0.2.2,<0.3
 
 test:
@@ -52,3 +52,4 @@ about:
 extra:
   recipe-maintainers:
     - chrisjsewell
+    - @conda-forge/jupyter-book
