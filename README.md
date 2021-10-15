@@ -117,5 +117,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@conda-forge/jupyter-book](https://github.com/conda-forge/jupyter-book/)
+* [@mmcky](https://github.com/mmcky/)
 
