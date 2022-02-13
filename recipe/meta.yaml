@@ -31,7 +31,7 @@ requirements:
     - python >=3.6
     - pyyaml
     - sphinx >=3.1,<5
-    - sphinx-togglebutton ~=0.2.2
+    - sphinx-togglebutton ~=0.3.0
 
 test:
   requires:
