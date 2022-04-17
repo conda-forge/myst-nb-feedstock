@@ -1,5 +1,5 @@
 {% set name = "myst-nb" %}
-{% set version = "0.13.1" %}
+{% set version = "0.13.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7a2da1d30bb7d00600febb3d93abc89f1f5a05c0602ba330e83db54f154b5c08
+  sha256: 81e0a4f186bb35c487f5443c7005a474d68ffb58f518f469102d1db7b452066a
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - python >=3.6
     - pyyaml
     - sphinx >=3.1,<5
-    - sphinx-togglebutton ~=0.2.2
+    - sphinx-togglebutton ~=0.3.0
 
 test:
   requires:
