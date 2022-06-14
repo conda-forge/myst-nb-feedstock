@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - flit_core >=3.4,<4
+    - flit-core >=3.4,<4
   run:
     - docutils >=0.15,<0.18
     - importlib-metadata
