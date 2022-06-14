@@ -30,6 +30,7 @@ requirements:
     - sphinx >=4,<6
     - sphinx-togglebutton ~=0.3.0
     - typing-extensions
+    - ipykernel
     - python >=3.7
 
 test:
