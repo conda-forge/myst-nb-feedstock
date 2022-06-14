@@ -39,7 +39,7 @@ test:
     - pip
   imports:
     - myst_nb
-    - myst_nb.nb_glue
+    - myst_nb.ext.glue
   commands:
     - pip check
 
