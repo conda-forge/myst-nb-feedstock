@@ -38,7 +38,9 @@ test:
     - pip
   imports:
     - myst_nb
-    - myst_nb.ext.glue
+    - myst_nb.ext.download
+    - myst_nb.ext.execution_tables
+    - myst_nb.glue
   commands:
     - pip check
 
