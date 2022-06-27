@@ -2,12 +2,12 @@
 {% set version = "0.14.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c7ab37929da72f78569a37bcccbc5d49fd679fd7935bf6c9fa36365eb58783a
+  sha256: 0e32990d1e2bb77b3803f2e6dbb24d01d89477719080d416576930d916bdd432
 
 build:
   number: 0
