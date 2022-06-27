@@ -1,13 +1,13 @@
 {% set name = "myst-nb" %}
-{% set version = "0.16.0" %}
+{% set version = "0.15.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c7ab37929da72f78569a37bcccbc5d49fd679fd7935bf6c9fa36365eb58783a
+  sha256: fdce98e47e7f020d8c0fb479bfbcc609a67b8c0ed79f0a50dd4e758a9142aaff
 
 build:
   number: 0
@@ -20,18 +20,19 @@ requirements:
     - python >=3.7
     - flit-core >=3.4,<4
   run:
+    - docutils >=0.15,<0.18
     - importlib-metadata
-    - ipython
-    - jupyter-cache ~=0.5.0
-    - nbclient
-    - myst-parser ~=0.18.0
-    - nbformat ~=5.0
-    - pyyaml
-    - sphinx >=4,<6
-    - sphinx-togglebutton ~=0.3.0
-    - typing-extensions
     - ipykernel
+    - ipython
+    - jupyter-cache >=0.5.0,<0.6.0
+    - myst-parser >=0.17.2,<0.18.0
+    - nbclient
+    - nbformat >=5.0,<6
     - python >=3.7
+    - pyyaml
+    - sphinx >=3.5,<6
+    - sphinx-togglebutton >=0.3.0,<0.4.0
+    - typing-extensions
 
 test:
   requires:
