@@ -1,5 +1,5 @@
 {% set name = "myst-nb" %}
-{% set version = "0.15.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name }}
@@ -53,4 +53,5 @@ about:
 extra:
   recipe-maintainers:
     - mmcky
+    - chrisjsewell
     - conda-forge/jupyter-book
