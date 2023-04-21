@@ -1,4 +1,4 @@
-{% set version = "0.17.1" %}
+{% set version = "0.17.2" %}
 
 package:
   name: myst-nb
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/myst-nb/myst-nb-{{ version }}.tar.gz
-  sha256: 14df725f3e00cb5efef4f863bf0c273490c8c662dfee39ed8a7b374bf2561933
+  sha256: 0f61386515fab07c73646adca97fff2f69f41e90d313a260217c5bbe419d858b
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - importlib-metadata
     - ipykernel
     - ipython
-    - jupyter-cache >=0.5.0,<0.6.0
+    - jupyter-cache >=0.5.0,<0.7.0
     - myst-parser >=0.18.0,<0.19.0
     - nbclient
     - nbformat >=5.0,<6
