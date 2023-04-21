@@ -30,7 +30,7 @@ requirements:
     - importlib-metadata
     - ipykernel
     - ipython
-    - jupyter-cache >=0.5.0,<0.6.0
+    - jupyter-cache >=0.5.0,<0.7.0
     - myst-parser >=0.18.0,<0.19.0
     - nbclient
     - nbformat >=5.0,<6
