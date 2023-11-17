@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed --no-build-isolation
   entry_points:
     - mystnb-docutils-html = myst_nb.docutils_:cli_html
     - mystnb-docutils-html5 = myst_nb.docutils_:cli_html5
