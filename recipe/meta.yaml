@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/m/myst-nb/myst_nb-{{ version }}.tar.gz
   sha256: 9077e42a1c6b441ea55078506f83555dda5d6c816ef4930841d71d239e3e0c5e
 
 build:
