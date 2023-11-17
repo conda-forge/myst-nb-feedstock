@@ -1,7 +1,8 @@
+{% set name = "myst-nb" %}
 {% set version = "1.0.0" %}
 
 package:
-  name: myst-nb
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
