@@ -1,4 +1,4 @@
-{% set version = "0.17.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: myst-nb
@@ -30,13 +30,13 @@ requirements:
     - importlib-metadata
     - ipykernel
     - ipython
-    - jupyter-cache >=0.5.0,<0.7.0
-    - myst-parser >=0.18.0,<0.19.0
+    - jupyter-cache >=0.5.0
+    - myst-parser >=1.0.0
     - nbclient
-    - nbformat >=5.0,<6
-    - python >=3.7
+    - nbformat >=5.0
+    - python >=3.9
     - pyyaml
-    - sphinx >=4,<6
+    - sphinx >=5
     - typing_extensions
 
 test:
