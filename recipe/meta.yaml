@@ -1,17 +1,17 @@
-{% set version = "0.17.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: myst-nb
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/m/myst-nb/myst-nb-{{ version }}.tar.gz
-  sha256: 0f61386515fab07c73646adca97fff2f69f41e90d313a260217c5bbe419d858b
+  url: https://pypi.io/packages/source/m/myst-nb/myst_nb-{{ version }}.tar.gz
+  sha256: 9077e42a1c6b441ea55078506f83555dda5d6c816ef4930841d71d239e3e0c5e
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed --no-build-isolation
   entry_points:
     - mystnb-docutils-html = myst_nb.docutils_:cli_html
     - mystnb-docutils-html5 = myst_nb.docutils_:cli_html5
@@ -30,13 +30,13 @@ requirements:
     - importlib-metadata
     - ipykernel
     - ipython
-    - jupyter-cache >=0.5.0,<0.7.0
-    - myst-parser >=0.18.0,<0.19.0
+    - jupyter-cache >=0.5.0
+    - myst-parser >=1.0.0
     - nbclient
-    - nbformat >=5.0,<6
-    - python >=3.7
+    - nbformat >=5.0
+    - python >=3.9
     - pyyaml
-    - sphinx >=4,<6
+    - sphinx >=5
     - typing_extensions
 
 test:
