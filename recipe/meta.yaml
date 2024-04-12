@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: myst-nb
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/myst-nb/myst_nb-{{ version }}.tar.gz
-  sha256: 9077e42a1c6b441ea55078506f83555dda5d6c816ef4930841d71d239e3e0c5e
+  sha256: 9278840e844f5d780b5acc5400cbf63d97caaccf8eb442a55ebd9a03e2522d5e
 
 build:
   number: 0
@@ -24,13 +24,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
     - flit-core >=3.4,<4
   run:
     - importlib-metadata
     - ipykernel
     - ipython
-    - jupyter-cache >=0.5.0
+    - jupyter-cache >=0.5
     - myst-parser >=1.0.0
     - nbclient
     - nbformat >=5.0
