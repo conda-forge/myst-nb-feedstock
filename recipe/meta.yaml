@@ -24,13 +24,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
     - flit-core >=3.4,<4
   run:
     - importlib-metadata
     - ipykernel
     - ipython
-    - jupyter-cache >=0.5.0
+    - jupyter-cache >=0.5
     - myst-parser >=1.0.0
     - nbclient
     - nbformat >=5.0
