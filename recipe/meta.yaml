@@ -1,4 +1,4 @@
-{% set version = "1.1.2" %}
+{% set version = "1.2.0" %}
 
 package:
   name: myst-nb
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/myst-nb/myst_nb-{{ version }}.tar.gz
-  sha256: 961b4005657029ca89892a4c75edbf0856c54ceaf6172368b46bf7676c1f7700
+  sha256: af459ec753b341952182b45b0a80b4776cebf80c9ee6aaca2a3f4027b440c9de
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed --no-build-isolation
   entry_points:
