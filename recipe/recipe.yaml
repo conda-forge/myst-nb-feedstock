@@ -48,7 +48,7 @@ requirements:
 tests:
   - python:
       pip_check: true
-      python_version: ${{ python_version }}.*
+      python_version: ${{ python_min }}.*
       imports:
         - myst_nb
         - myst_nb.ext.glue
