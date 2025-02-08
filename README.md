@@ -9,7 +9,7 @@ Package license: BSD-3-Clause
 
 Summary: A Jupyter Notebook Sphinx reader built on top of the MyST markdown parser.
 
-Documentation: https://myst-nb.readthedocs.io
+Documentation: https://myst-nb.readthedocs.io/
 
 Current build status
 ====================
