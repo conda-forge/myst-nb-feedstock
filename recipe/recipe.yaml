@@ -30,7 +30,7 @@ build:
 requirements:
   host:
     - pip
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - flit-core >=3.4,<4
   run:
     - importlib-metadata
