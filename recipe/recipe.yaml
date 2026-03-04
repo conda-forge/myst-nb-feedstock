@@ -31,7 +31,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - flit-core >=3.4,<4
+    - flit-core >=3.11,<4
   run:
     - importlib-metadata
     - ipykernel
