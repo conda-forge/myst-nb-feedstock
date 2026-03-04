@@ -148,3 +148,6 @@ Feedstock Maintainers
 * [@conda-forge/jupyter-book](https://github.com/orgs/conda-forge/teams/jupyter-book/)
 * [@mmcky](https://github.com/mmcky/)
 
+
+<!-- dummy commit to enable rerendering -->
+
